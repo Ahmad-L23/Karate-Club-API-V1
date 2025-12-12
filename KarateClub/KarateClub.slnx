@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../KarateClubBusinessLayer/KarateClubBusinessLayer.csproj" Id="ccee230f-1059-405d-9b72-5a53b75b26b5" />
+  <Project Path="../KarateClubDataAccessLayer/KarateClubDataAccessLayer.csproj" Id="24be75b7-43ac-4b2b-8882-fb31906c755b" />
+  <Project Path="KarateClub.csproj" />
+</Solution>

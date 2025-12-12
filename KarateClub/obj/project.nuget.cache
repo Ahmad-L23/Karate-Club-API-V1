@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rjObTg1I/WE=",
+  "success": true,
+  "projectFilePath": "C:\\Karate_Club_project\\KarateClub\\KarateClub.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

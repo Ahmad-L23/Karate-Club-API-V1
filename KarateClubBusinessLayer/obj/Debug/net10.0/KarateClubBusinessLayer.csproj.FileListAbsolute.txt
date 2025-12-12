@@ -1,0 +1,11 @@
+C:\Karate_Club_project\KarateClubBusinessLayer\bin\Debug\net10.0\KarateClubBusinessLayer.deps.json
+C:\Karate_Club_project\KarateClubBusinessLayer\bin\Debug\net10.0\KarateClubBusinessLayer.dll
+C:\Karate_Club_project\KarateClubBusinessLayer\bin\Debug\net10.0\KarateClubBusinessLayer.pdb
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.AssemblyInfoInputs.cache
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.AssemblyInfo.cs
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.dll
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\refint\KarateClubBusinessLayer.dll
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\KarateClubBusinessLayer.pdb
+C:\Karate_Club_project\KarateClubBusinessLayer\obj\Debug\net10.0\ref\KarateClubBusinessLayer.dll

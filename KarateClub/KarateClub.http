@@ -1,0 +1,6 @@
+@KarateClub_HostAddress = http://localhost:5201
+
+GET {{KarateClub_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

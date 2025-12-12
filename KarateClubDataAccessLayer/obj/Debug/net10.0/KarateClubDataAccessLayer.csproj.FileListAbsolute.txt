@@ -1,0 +1,12 @@
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.csproj.AssemblyReference.cache
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.AssemblyInfoInputs.cache
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.AssemblyInfo.cs
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Karate_Club_project\KarateClubDataAccessLayer\bin\Debug\net10.0\KarateClubDataAccessLayer.deps.json
+C:\Karate_Club_project\KarateClubDataAccessLayer\bin\Debug\net10.0\KarateClubDataAccessLayer.dll
+C:\Karate_Club_project\KarateClubDataAccessLayer\bin\Debug\net10.0\KarateClubDataAccessLayer.pdb
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.dll
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\refint\KarateClubDataAccessLayer.dll
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.pdb
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\ref\KarateClubDataAccessLayer.dll
