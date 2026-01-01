@@ -1,0 +1,12 @@
+C:\Karate_Club_project\Dtos\bin\Debug\net10.0\Dtos.deps.json
+C:\Karate_Club_project\Dtos\bin\Debug\net10.0\Dtos.dll
+C:\Karate_Club_project\Dtos\bin\Debug\net10.0\Dtos.pdb
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.AssemblyInfoInputs.cache
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.AssemblyInfo.cs
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.csproj.CoreCompileInputs.cache
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.sourcelink.json
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.dll
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\refint\Dtos.dll
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\Dtos.pdb
+C:\Karate_Club_project\Dtos\obj\Debug\net10.0\ref\Dtos.dll

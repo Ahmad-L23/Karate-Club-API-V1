@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KarateClubDataAccessLayer\KarateClubDataAccessLayer.csproj" />
+  </ItemGroup>
+
 </Project>

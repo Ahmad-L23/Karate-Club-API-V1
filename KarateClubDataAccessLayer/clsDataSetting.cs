@@ -7,6 +7,10 @@ namespace KarateClubDataAccessLayer
 {
     public class clsDataSetting
     {
-        public static string ConnectionString = @"Server=YOUR_SERVER;Database=YOUR_DB;User Id=YOUR_USER;Password=YOUR_PASS;";
+        public static string ConnectionString = @"Server=.;Database=KarateClub;
+                                                    User Id=sa;
+                                                    Password=sa123456;
+                                                    TrustServerCertificate=True;";
+
     }
 }

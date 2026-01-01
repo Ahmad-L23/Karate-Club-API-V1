@@ -10,3 +10,7 @@ C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDat
 C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\refint\KarateClubDataAccessLayer.dll
 C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.pdb
 C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\ref\KarateClubDataAccessLayer.dll
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateClubDataAccessLayer.sourcelink.json
+C:\Karate_Club_project\KarateClubDataAccessLayer\bin\Debug\net10.0\Dtos.dll
+C:\Karate_Club_project\KarateClubDataAccessLayer\bin\Debug\net10.0\Dtos.pdb
+C:\Karate_Club_project\KarateClubDataAccessLayer\obj\Debug\net10.0\KarateCl.CA3443F4.Up2Date
