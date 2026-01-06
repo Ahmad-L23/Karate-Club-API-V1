@@ -11,8 +11,8 @@ namespace KarateClubBusinessLayer
         public enum enMode { add, update }
         public int PersonID { get; set; }
         public string Name { get; set; }
-        public string? Address {  get; set; }
-        public string? ContactInfo {  get; set; }
+        public string? Address { get; set; }
+        public string? ContactInfo { get; set; }
 
         public CreatePersonDTO PDTO
         {
@@ -28,7 +28,7 @@ namespace KarateClubBusinessLayer
             }
         }
 
-        public enMode Mode = enMode.add; 
+        public enMode Mode = enMode.add;
         public clsPerson()
         {
             PersonID = 0;
@@ -38,7 +38,7 @@ namespace KarateClubBusinessLayer
             Mode = enMode.add;
         }
 
-       public clsPerson(CreatePersonDTO pDTO, enMode mode = enMode.add)
+        public clsPerson(CreatePersonDTO pDTO, enMode mode = enMode.add)
         {
             PersonID = pDTO.PersonID;
             Name = pDTO.Name;
@@ -62,7 +62,7 @@ namespace KarateClubBusinessLayer
 
         public bool Save()
         {
-            switch(Mode)
+            switch (Mode)
             {
                 case enMode.add:
                     return _AddNewPerson();
@@ -74,13 +74,25 @@ namespace KarateClubBusinessLayer
             return false;
         }
 
-        public static clsPerson Find(int id)
+        public static clsPerson? Find(int id)
         {
-            CreatePersonDTO person =  clsPersonData.FindPerson(id);
+            CreatePersonDTO person = clsPersonData.FindPerson(id);
 
-            return new clsPerson(person);
+            if (person == null)
+                return null;
+            return new clsPerson(person,enMode.update);
         }
 
 
+        public static List<CreatePersonDTO> GetAllPrrsons()
+        {
+            return clsPersonData.GetAll();
+        }
+
+
+        public static bool deletePerson(int personID)
+        {
+            return clsPersonData.DeletePerson(personID);
+        }
     }
 }

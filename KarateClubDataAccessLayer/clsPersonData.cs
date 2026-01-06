@@ -99,7 +99,7 @@ namespace KarateClubDataAccessLayer
                             {
                                 var person = new CreatePersonDTO
                                 {
-                                    PersonID = reader.GetInt32(reader.GetOrdinal("PersonId")),
+                                    PersonID = reader.GetInt32(reader.GetOrdinal("PesrsonId")),
                                     Name = reader.GetString(reader.GetOrdinal("Name")),
                                     Address = reader.GetString(reader.GetOrdinal("Address")),
                                     ContactInfo = reader.GetString(reader.GetOrdinal("ContactInfo"))
@@ -114,10 +114,75 @@ namespace KarateClubDataAccessLayer
 
             catch(Exception ex)
             {
-                throw new Exception();
+
             }
             return null;
         }
 
+
+        public static List<CreatePersonDTO> GetAll()
+        {
+            List<CreatePersonDTO> persons = new List<CreatePersonDTO>();
+
+
+            string query = @"SELECT PesrsonId, Name, Address, ContactInfo 
+                     FROM people";
+
+            using (SqlConnection connection = new SqlConnection(_Connstring))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            CreatePersonDTO person = new CreatePersonDTO
+                            {
+                                PersonID = reader.GetInt32(reader.GetOrdinal("PesrsonId")),
+                                Name = reader.GetString(reader.GetOrdinal("Name")),
+                                Address = reader["Address"] == DBNull.Value
+                                            ? null
+                                            : reader["Address"].ToString(),
+                                ContactInfo = reader["ContactInfo"] == DBNull.Value
+                                            ? null
+                                            : reader["ContactInfo"].ToString()
+                            };
+
+                            persons.Add(person);
+                        }
+                    }
+                }
+            }
+
+            return persons;
+        }
+
+
+
+        public static bool DeletePerson(int personID)
+        {
+            string query = @"DELETE FROM people WHERE PesrsonId = @PersonID";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_Connstring))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.Add("@PersonID", System.Data.SqlDbType.Int).Value = personID;
+
+                    connection.Open();
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    return rowsAffected > 0; 
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

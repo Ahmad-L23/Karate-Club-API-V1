@@ -3,14 +3,20 @@
   "WorkspaceRootPath": "C:\\Karate_Club_project\\KarateClub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1259E87-7C52-A04C-DD0C-DEB5CF937541}|KarateClub.csproj|c:\\karate_club_project\\karateclub\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1259E87-7C52-A04C-DD0C-DEB5CF937541}|KarateClub.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24BE75B7-43AC-4B2B-8882-FB31906C755B}|..\\KarateClubDataAccessLayer\\KarateClubDataAccessLayer.csproj|c:\\karate_club_project\\karateclubdataaccesslayer\\clspersondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEE230F-1059-405D-9B72-5A53B75B26B5}|..\\KarateClubBusinessLayer\\KarateClubBusinessLayer.csproj|c:\\karate_club_project\\karateclubbusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BE75B7-43AC-4B2B-8882-FB31906C755B}|..\\KarateClubDataAccessLayer\\KarateClubDataAccessLayer.csproj|c:\\karate_club_project\\karateclubdataaccesslayer\\clspersondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1259E87-7C52-A04C-DD0C-DEB5CF937541}|KarateClub.csproj|c:\\karate_club_project\\karateclub\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1259E87-7C52-A04C-DD0C-DEB5CF937541}|KarateClub.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA12F05A-819D-4686-8FBF-9ECADCF2A9B5}|..\\Dtos\\Dtos.csproj|c:\\karate_club_project\\dtos\\persondtos\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA12F05A-819D-4686-8FBF-9ECADCF2A9B5}|..\\Dtos\\Dtos.csproj|c:\\karate_club_project\\dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BE75B7-43AC-4B2B-8882-FB31906C755B}|..\\KarateClubDataAccessLayer\\KarateClubDataAccessLayer.csproj|c:\\karate_club_project\\karateclubdataaccesslayer\\clsdatasetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -36,12 +42,6 @@
       "RelativeMoniker": "D:0:0:{A1259E87-7C52-A04C-DD0C-DEB5CF937541}|KarateClub.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12F05A-819D-4686-8FBF-9ECADCF2A9B5}|..\\Dtos\\Dtos.csproj|c:\\karate_club_project\\dtos\\persondtos\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA12F05A-819D-4686-8FBF-9ECADCF2A9B5}|..\\Dtos\\Dtos.csproj|c:\\karate_club_project\\dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCEE230F-1059-405D-9B72-5A53B75B26B5}|..\\KarateClubBusinessLayer\\KarateClubBusinessLayer.csproj|c:\\karate_club_project\\karateclubbusinesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -56,59 +56,33 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-25T09:18:29.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
               "ToolTip": "C:\\Karate_Club_project\\KarateClub\\Controllers\\PersonController.cs",
               "RelativeToolTip": "Controllers\\PersonController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwC8AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA5wC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T20:51:35.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsDataSetting.cs",
-              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsDataSetting.cs",
-              "RelativeDocumentMoniker": "..\\KarateClubDataAccessLayer\\clsDataSetting.cs",
-              "ToolTip": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsDataSetting.cs",
-              "RelativeToolTip": "..\\KarateClubDataAccessLayer\\clsDataSetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T00:33:11.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "clsPersonData.cs",
               "DocumentMoniker": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsPersonData.cs",
               "RelativeDocumentMoniker": "..\\KarateClubDataAccessLayer\\clsPersonData.cs",
               "ToolTip": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsPersonData.cs",
               "RelativeToolTip": "..\\KarateClubDataAccessLayer\\clsPersonData.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAIA+wE0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAADgv20AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T00:25:09.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -127,15 +101,15 @@
               "RelativeDocumentMoniker": "..\\KarateClubBusinessLayer\\clsPerson.cs",
               "ToolTip": "C:\\Karate_Club_project\\KarateClubBusinessLayer\\clsPerson.cs",
               "RelativeToolTip": "..\\KarateClubBusinessLayer\\clsPerson.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwE4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAvwE4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T20:23:14.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "KarateClub",
+              "DocumentIndex": 7,
+              "Title": "KarateClub.csproj",
               "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\KarateClub.csproj",
               "RelativeDocumentMoniker": "KarateClub.csproj",
               "ToolTip": "C:\\Karate_Club_project\\KarateClub\\KarateClub.csproj",
@@ -147,33 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KarateClub.http",
-              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\KarateClub.http",
-              "RelativeDocumentMoniker": "KarateClub.http",
-              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\KarateClub.http",
-              "RelativeToolTip": "KarateClub.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-12-25T09:18:28.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T22:03:19.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Karate_Club_project\\Dtos\\Class1.cs",
               "RelativeDocumentMoniker": "..\\Dtos\\Class1.cs",
@@ -186,15 +134,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "CreatePersonDTO.cs",
               "DocumentMoniker": "C:\\Karate_Club_project\\Dtos\\PersonDTOS\\CreatePersonDTO.cs",
               "RelativeDocumentMoniker": "..\\Dtos\\PersonDTOS\\CreatePersonDTO.cs",
               "ToolTip": "C:\\Karate_Club_project\\Dtos\\PersonDTOS\\CreatePersonDTO.cs",
               "RelativeToolTip": "..\\Dtos\\PersonDTOS\\CreatePersonDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T20:01:22.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsDataSetting.cs",
+              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsDataSetting.cs",
+              "RelativeDocumentMoniker": "..\\KarateClubDataAccessLayer\\clsDataSetting.cs",
+              "ToolTip": "C:\\Karate_Club_project\\KarateClubDataAccessLayer\\clsDataSetting.cs",
+              "RelativeToolTip": "..\\KarateClubDataAccessLayer\\clsDataSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T00:33:11.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-25T09:18:29.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KarateClub.http",
+              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\KarateClub.http",
+              "RelativeDocumentMoniker": "KarateClub.http",
+              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\KarateClub.http",
+              "RelativeToolTip": "KarateClub.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-25T09:18:28.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Karate_Club_project\\KarateClub\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Karate_Club_project\\KarateClub\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T22:03:19.059Z",
               "EditorCaption": ""
             },
             {

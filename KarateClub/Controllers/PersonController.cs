@@ -45,7 +45,7 @@ namespace KarateClub.Controllers
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
         {
-            clsPerson person = clsPerson.Find(id);
+            clsPerson? person = clsPerson.Find(id);
 
             if (person == null)
                 return NotFound();
@@ -53,6 +53,38 @@ namespace KarateClub.Controllers
             return Ok(person.PDTO);
         }
 
+
+        [HttpGet("GetAllPersons")]
+        public IActionResult GetAllPersons()
+        {
+            List<CreatePersonDTO> persons = clsPerson.GetAllPrrsons();
+
+            if (persons == null || persons.Count == 0)
+            {
+                return NotFound("There is no data.");
+            }
+
+            return Ok(persons);
+        }
+        
+        
+        [HttpDelete("DeletePerson")]
+        
+        public IActionResult DeletePerson(int id)
+        {
+            if(clsPerson.Find(id) == null)
+            {
+                return NotFound($"Person with id {id} not found");
+            }
+            if(!(clsPerson.deletePerson(id)))
+            {
+                return BadRequest("an error occurred while deleting person");
+            }
+
+            return Ok($"Person with {id} deleted sucessfully");
+        }
+
+        
 
     }
 }

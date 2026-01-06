@@ -747,6 +747,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "System.Diagnostics.EventLog": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             }
           },
           "imports": [
