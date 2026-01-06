@@ -78,7 +78,7 @@ namespace KarateClubDataAccessLayer
         }
 
 
-        public static CreatePersonDTO FindPerson(int personId)
+        public static CreatePersonDTO? FindPerson(int personId)
         {
             string query = @"SELECT * FROM People WHERE PesrsonId = @PersonId";
 

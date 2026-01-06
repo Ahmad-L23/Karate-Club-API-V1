@@ -76,7 +76,7 @@ namespace KarateClubBusinessLayer
 
         public static clsPerson? Find(int id)
         {
-            CreatePersonDTO person = clsPersonData.FindPerson(id);
+            CreatePersonDTO? person = clsPersonData.FindPerson(id);
 
             if (person == null)
                 return null;

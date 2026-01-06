@@ -2,6 +2,7 @@
 using KarateClubBusinessLayer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace KarateClub.Controllers
 {
@@ -9,38 +10,44 @@ namespace KarateClub.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-
         [HttpPost("AddPerson")]
-
         public IActionResult AddPerson([FromBody] CreatePersonDTO personDTO)
         {
             if (personDTO == null)
                 return BadRequest("Invalid Data");
 
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             clsPerson person = new clsPerson(personDTO, clsPerson.enMode.add);
 
-            if(!person.Save())
+            if (!person.Save())
                 return StatusCode(500, "Failed to add person");
-            
-
 
             return Ok(person.PDTO);
         }
 
-        [HttpPut("Update{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult UpdatePerson(int id, [FromBody] CreatePersonDTO personDTO)
         {
             if (personDTO == null)
                 return BadRequest("Invalid data or ID mismatch");
 
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            // Optional: Check ID consistency if you want to
+            // if (id != personDTO.PersonID)
+            //    return BadRequest("ID mismatch");
+
             clsPerson person = new clsPerson(personDTO, clsPerson.enMode.update);
             person.PersonID = id;
+
             if (!person.Save())
                 return StatusCode(500, "Failed to update person");
 
             return Ok(person.PDTO);
         }
-
 
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
@@ -53,38 +60,27 @@ namespace KarateClub.Controllers
             return Ok(person.PDTO);
         }
 
-
         [HttpGet("GetAllPersons")]
         public IActionResult GetAllPersons()
         {
             List<CreatePersonDTO> persons = clsPerson.GetAllPrrsons();
 
             if (persons == null || persons.Count == 0)
-            {
                 return NotFound("There is no data.");
-            }
 
             return Ok(persons);
         }
-        
-        
-        [HttpDelete("DeletePerson")]
-        
+
+        [HttpDelete("DeletePerson/{id}")]
         public IActionResult DeletePerson(int id)
         {
-            if(clsPerson.Find(id) == null)
-            {
+            if (clsPerson.Find(id) == null)
                 return NotFound($"Person with id {id} not found");
-            }
-            if(!(clsPerson.deletePerson(id)))
-            {
-                return BadRequest("an error occurred while deleting person");
-            }
 
-            return Ok($"Person with {id} deleted sucessfully");
+            if (!clsPerson.deletePerson(id))
+                return BadRequest("An error occurred while deleting person");
+
+            return Ok($"Person with id {id} deleted successfully");
         }
-
-        
-
     }
 }

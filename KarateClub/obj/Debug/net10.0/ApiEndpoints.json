@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "KarateClub.Controllers.BeltRankController",
+    "Method": "GetBeltRank",
+    "RelativePath": "api/BeltRank/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltRankController",
+    "Method": "AddBeltRank",
+    "RelativePath": "api/BeltRank/AddBeltRank",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "beltRankDTO",
+        "Type": "Dtos.BeltRankDTOS.CreateBeltRankDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltRankController",
+    "Method": "DeleteBeltRank",
+    "RelativePath": "api/BeltRank/DeleteBeltRank",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltRankController",
+    "Method": "GetAllBeltRanks",
+    "RelativePath": "api/BeltRank/GetAllBeltRanks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltRankController",
+    "Method": "UpdateBeltRank",
+    "RelativePath": "api/BeltRank/Update{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "beltRankDTO",
+        "Type": "Dtos.BeltRankDTOS.CreateBeltRankDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KarateClub.Controllers.PersonController",
     "Method": "GetPerson",
     "RelativePath": "api/Person/{id}",

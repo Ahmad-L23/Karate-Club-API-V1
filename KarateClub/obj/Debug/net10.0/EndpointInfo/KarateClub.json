@@ -5,6 +5,136 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/BeltRank/AddBeltRank": {
+      "post": {
+        "tags": [
+          "BeltRank"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltRank/Update{id}": {
+      "put": {
+        "tags": [
+          "BeltRank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBeltRankDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltRank/{id}": {
+      "get": {
+        "tags": [
+          "BeltRank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltRank/GetAllBeltRanks": {
+      "get": {
+        "tags": [
+          "BeltRank"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltRank/DeleteBeltRank": {
+      "delete": {
+        "tags": [
+          "BeltRank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Person/AddPerson": {
       "post": {
         "tags": [
@@ -138,6 +268,24 @@
   },
   "components": {
     "schemas": {
+      "CreateBeltRankDTO": {
+        "type": "object",
+        "properties": {
+          "beltRankID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rankName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testFees": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreatePersonDTO": {
         "type": "object",
         "properties": {
@@ -163,6 +311,9 @@
     }
   },
   "tags": [
+    {
+      "name": "BeltRank"
+    },
     {
       "name": "Person"
     }
