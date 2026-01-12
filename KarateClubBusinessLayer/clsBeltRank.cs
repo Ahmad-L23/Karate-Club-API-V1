@@ -11,7 +11,7 @@ namespace KarateClubBusinessLayer
 
         public int BeltRankID { get; set; }
         public string? RankName { get; set; }
-        public decimal TestFees { get; set; }
+        public double TestFees { get; set; }
 
         public CreateBeltRankDTO BRDTO
         {

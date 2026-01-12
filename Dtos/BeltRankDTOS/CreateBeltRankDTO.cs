@@ -10,6 +10,6 @@ namespace Dtos.BeltRankDTOS
         public string? RankName { get; set; }
 
         [Range(0, double.MaxValue, ErrorMessage = "TestFees must be a non-negative value")]
-        public decimal TestFees { get; set; }
+        public double TestFees { get; set; }
     }
 }

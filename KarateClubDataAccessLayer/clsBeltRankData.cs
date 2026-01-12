@@ -103,7 +103,7 @@ namespace KarateClubDataAccessLayer
                                 {
                                     BeltRankID = reader.GetInt32(reader.GetOrdinal("BeltRankid")),
                                     RankName = reader.GetString(reader.GetOrdinal("RankName")),
-                                    TestFees = reader.GetDecimal(reader.GetOrdinal("TestFees"))
+                                    TestFees = reader.GetDouble(reader.GetOrdinal("TestFees"))
                                 };
                             }
                         }
@@ -140,7 +140,7 @@ namespace KarateClubDataAccessLayer
                         {
                             BeltRankID = reader.GetInt32(reader.GetOrdinal("BeltRankid")),
                             RankName = reader.GetString(reader.GetOrdinal("RankName")),
-                            TestFees = reader.GetDecimal(reader.GetOrdinal("TestFees"))
+                            TestFees = reader.GetDouble(reader.GetOrdinal("TestFees"))
                         };
 
                         beltRanks.Add(beltRank);

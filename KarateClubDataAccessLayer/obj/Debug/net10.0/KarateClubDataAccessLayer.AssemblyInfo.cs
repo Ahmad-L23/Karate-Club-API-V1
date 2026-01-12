@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KarateClubDataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cbf8f756893cb785d609f12b6d785c1900272be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c97a6e4a78fe0d5d7dd5c949b66b05b337f7e36")]
 [assembly: System.Reflection.AssemblyProductAttribute("KarateClubDataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KarateClubDataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
