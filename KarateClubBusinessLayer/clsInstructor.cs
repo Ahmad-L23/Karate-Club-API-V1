@@ -11,6 +11,7 @@ namespace KarateClubBusinessLayer
 
         public int InstructorID { get; set; }
         public int PersonID { get; set; }
+        public clsPerson? person {  get; set; }
         public string? Qualification { get; set; }
 
         public CreateInstructorDTO IDTO
@@ -43,6 +44,7 @@ namespace KarateClubBusinessLayer
         {
             InstructorID = dto.InstructorID;
             PersonID = dto.PersonID;
+            person = clsPerson.Find(PersonID);
             Qualification = dto.Qualification;
             Mode = mode;
         }
