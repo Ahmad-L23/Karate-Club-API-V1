@@ -1,4 +1,10 @@
+using KarateClubDataAccessLayer;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+clsDataSetting.ConnectionString =
+    builder.Configuration?.GetConnectionString("DefaultConnection");
 
 // Add services
 builder.Services.AddControllers();

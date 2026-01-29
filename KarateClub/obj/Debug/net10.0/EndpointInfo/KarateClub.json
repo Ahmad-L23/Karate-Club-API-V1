@@ -136,6 +136,158 @@
         }
       }
     },
+    "/api/BeltTest/member/{memberId}/tests": {
+      "get": {
+        "tags": [
+          "BeltTest"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltTest/all": {
+      "get": {
+        "tags": [
+          "BeltTest"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltTest/member/{memberId}/last": {
+      "get": {
+        "tags": [
+          "BeltTest"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltTest": {
+      "post": {
+        "tags": [
+          "BeltTest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BeltTest/{testId}": {
+      "put": {
+        "tags": [
+          "BeltTest"
+        ],
+        "parameters": [
+          {
+            "name": "testId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BeltTestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BeltTest"
+        ],
+        "parameters": [
+          {
+            "name": "testId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Instructor/AddInstructor": {
       "post": {
         "tags": [
@@ -408,6 +560,158 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MemberInstructor/AddMemberInstructor": {
+      "post": {
+        "tags": [
+          "MemberInstructor"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MemberInstructor/Update": {
+      "put": {
+        "tags": [
+          "MemberInstructor"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "instructorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberInstructorDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MemberInstructor/Get": {
+      "get": {
+        "tags": [
+          "MemberInstructor"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "instructorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MemberInstructor/GetAllMemberInstructors": {
+      "get": {
+        "tags": [
+          "MemberInstructor"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MemberInstructor/Delete": {
+      "delete": {
+        "tags": [
+          "MemberInstructor"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "instructorId",
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -705,10 +1009,245 @@
           }
         }
       }
+    },
+    "/api/SubscriptionPeriod/AddSubscriptionPeriod": {
+      "post": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/Update/{id}": {
+      "put": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionPeriodDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/{id}": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/GetAllSubscriptionPeriods": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/DeleteSubscriptionPeriod/{id}": {
+      "delete": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/GetActiveSubscriptions": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/GetSubscriptionsByMember/{memberId}": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/GetUpcomingExpiringSubscriptions": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubscriptionPeriod/GetTotalFeesByMember/{memberId}": {
+      "get": {
+        "tags": [
+          "SubscriptionPeriod"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "BeltTestDTO": {
+        "type": "object",
+        "properties": {
+          "testID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rankID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "testDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "testByInstructor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paymentID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateBeltRankDTO": {
         "type": "object",
         "properties": {
@@ -802,6 +1341,24 @@
         },
         "additionalProperties": false
       },
+      "MemberInstructorDTO": {
+        "type": "object",
+        "properties": {
+          "memberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "instructorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "PaymentDTO": {
         "type": "object",
         "properties": {
@@ -823,6 +1380,36 @@
           }
         },
         "additionalProperties": false
+      },
+      "SubscriptionPeriodDTO": {
+        "type": "object",
+        "properties": {
+          "periodID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fees": {
+            "type": "number",
+            "format": "double"
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paymentID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
       }
     }
   },
@@ -831,16 +1418,25 @@
       "name": "BeltRank"
     },
     {
+      "name": "BeltTest"
+    },
+    {
       "name": "Instructor"
     },
     {
       "name": "Member"
     },
     {
+      "name": "MemberInstructor"
+    },
+    {
       "name": "Payment"
     },
     {
       "name": "Person"
+    },
+    {
+      "name": "SubscriptionPeriod"
     }
   ]
 }

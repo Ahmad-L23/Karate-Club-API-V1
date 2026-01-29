@@ -79,6 +79,101 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "AddTest",
+    "RelativePath": "api/BeltTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testDto",
+        "Type": "Dtos.BeltTestsDTOS.BeltTestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "UpdateTest",
+    "RelativePath": "api/BeltTest/{testId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "testDto",
+        "Type": "Dtos.BeltTestsDTOS.BeltTestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "DeleteTest",
+    "RelativePath": "api/BeltTest/{testId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "GetAllTests",
+    "RelativePath": "api/BeltTest/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "GetLastTestForMember",
+    "RelativePath": "api/BeltTest/member/{memberId}/last",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.BeltTestController",
+    "Method": "GetTestsForMember",
+    "RelativePath": "api/BeltTest/member/{memberId}/tests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KarateClub.Controllers.InstructorController",
     "Method": "GetInstructor",
     "RelativePath": "api/Instructor/{id}",
@@ -253,6 +348,100 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KarateClub.Controllers.MemberInstructorController",
+    "Method": "AddMemberInstructor",
+    "RelativePath": "api/MemberInstructor/AddMemberInstructor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberInstructorDTO",
+        "Type": "Dtos.MemberInstructorDTOS.MemberInstructorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.MemberInstructorController",
+    "Method": "DeleteMemberInstructor",
+    "RelativePath": "api/MemberInstructor/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "instructorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.MemberInstructorController",
+    "Method": "GetMemberInstructor",
+    "RelativePath": "api/MemberInstructor/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "instructorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.MemberInstructorController",
+    "Method": "GetAllMemberInstructors",
+    "RelativePath": "api/MemberInstructor/GetAllMemberInstructors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.MemberInstructorController",
+    "Method": "UpdateMemberInstructor",
+    "RelativePath": "api/MemberInstructor/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "instructorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "memberInstructorDTO",
+        "Type": "Dtos.MemberInstructorDTOS.MemberInstructorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KarateClub.Controllers.PaymentController",
     "Method": "GetPayment",
     "RelativePath": "api/Payment/{id}",
@@ -421,6 +610,137 @@
       {
         "Name": "personDTO",
         "Type": "Dtos.PersonDTOS.CreatePersonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetSubscriptionPeriod",
+    "RelativePath": "api/SubscriptionPeriod/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "AddSubscriptionPeriod",
+    "RelativePath": "api/SubscriptionPeriod/AddSubscriptionPeriod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "spDTO",
+        "Type": "Dtos.SubscriptionPeriodDTOS.SubscriptionPeriodDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "DeleteSubscriptionPeriod",
+    "RelativePath": "api/SubscriptionPeriod/DeleteSubscriptionPeriod/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetActiveSubscriptions",
+    "RelativePath": "api/SubscriptionPeriod/GetActiveSubscriptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetAllSubscriptionPeriods",
+    "RelativePath": "api/SubscriptionPeriod/GetAllSubscriptionPeriods",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetSubscriptionsByMember",
+    "RelativePath": "api/SubscriptionPeriod/GetSubscriptionsByMember/{memberId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetTotalFeesByMember",
+    "RelativePath": "api/SubscriptionPeriod/GetTotalFeesByMember/{memberId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "GetUpcomingExpiringSubscriptions",
+    "RelativePath": "api/SubscriptionPeriod/GetUpcomingExpiringSubscriptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KarateClub.Controllers.SubscriptionPeriodController",
+    "Method": "UpdateSubscriptionPeriod",
+    "RelativePath": "api/SubscriptionPeriod/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "spDTO",
+        "Type": "Dtos.SubscriptionPeriodDTOS.SubscriptionPeriodDTO",
         "IsRequired": true
       }
     ],
